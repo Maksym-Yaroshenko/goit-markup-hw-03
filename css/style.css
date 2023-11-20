@@ -4,11 +4,82 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img,
+a {
+    display: block;
+    max-width: 100%;
+}
+
+
 .link {
     text-decoration: none;
 }
 
-/* Header */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ===============================Header=============================== */
+
+.main-bottoms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-main-nav {
+    display: flex;
+}
+
+.flex-menu {
+    display: flex;
+    column-gap: 40px;
+}
+
+.flex-menu-contacts {
+    display: flex;
+    column-gap: 40px;
+}
+
 
 .logo {
     color: var(--IRIS, #4D5AE5);
@@ -18,6 +89,9 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 .logo-web {
@@ -40,6 +114,8 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -56,6 +132,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-contact-link:hover,
@@ -70,10 +148,13 @@ body {
     font-style: normal;
 }
 
-/* Section-1 */
+/* ===============================Section-1=============================== */
 
 .first-section {
     background: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero {
@@ -83,6 +164,10 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -93,6 +178,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -104,10 +191,16 @@ body {
 font-family: 'Roboto', sans-serif; */
 
 
-/* Section-2 */
+/* ===============================Section-2=============================== */
 
-.hide {
-    font-size: 0px;
+.menu-list-advantages {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.menu-item-advantages {
+    width: 264px;
 }
 
 .menu-name-advantages {
@@ -116,6 +209,7 @@ font-family: 'Roboto', sans-serif; */
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .menu-advantages {
@@ -125,7 +219,7 @@ font-family: 'Roboto', sans-serif; */
     letter-spacing: 0.02em;
 }
 
-/* Section-3 */
+/* ===============================Section-3=============================== */
 
 .third-section {
     background: var(--CLOUD, #F4F4FD);
@@ -139,23 +233,44 @@ font-family: 'Roboto', sans-serif; */
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.menu-card-team {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.list-item-card-team {
+    background-color: #FFF;
+}
+
+.profession-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .menu-team-member {
     color: var(--NAVY-BLUE, #2E2F42);
-    background-color: #FFF;
+    /* background-color: #FFF; */
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+
 }
 
 .menu-profession-team-member {
     color: var(--SLATE, #434455);
-    background-color: #FFF;
+    /* background-color: #FFF; */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 
 .list-item {
@@ -163,7 +278,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 
-/* Section-4 */
+/* ===============================Section-4=============================== */
 
 .name-portfolio {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -173,6 +288,30 @@ font-family: 'Roboto', sans-serif; */
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.menu-card-option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.card-option {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-left: 16px;
+}
+
+.list-item-card-option {
+    width: 360px;
+    width: calc((100%-48px)/3);
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
 .menu-option {
@@ -190,10 +329,19 @@ font-family: 'Roboto', sans-serif; */
     letter-spacing: 0.02em;
 }
 
-/* Footer */
+/* ===============================Footer=============================== */
 
 .end-of-page {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17.5px;
+    padding-left: 156px;
 }
 
 .end-of-page-logo {
@@ -221,4 +369,5 @@ font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }

@@ -356,13 +356,6 @@ font-family: 'Roboto', sans-serif; */
     padding-bottom: 100px;
 }
 
-.flex-footer {
-    display: flex;
-    flex-direction: column;
-    /* row-gap: 17.5px; */
-    padding-left: 156px;
-}
-
 .end-of-page-logo {
     display: inline-block;
     color: var(--IRIS, #4D5AE5);
